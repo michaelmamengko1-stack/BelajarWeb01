@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Grid</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .grid_container{
+            display:grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            gap: 2em;
+            justify-content: center;
+            grid-template-areas:
+            "box-1 box-1 box-3"
+            "box-4 box-5 box-6"
+            "box-7 box-8 box-8";
+        }
+
+        .grid_container div{
+            padding: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .bagian1{ grid-area: box-1; background-color: rgb(0, 64, 42); }
+        .bagian2{ grid-area: box-2; background-color: rgba(112, 181, 0, 0.507); }
+        .bagian3{ grid-area: box-3; background-color: rgba(55, 243, 102, 0.523); text-align:center;}
+        .bagian4{ grid-area: box-4; background-color: rgb(48, 255, 127); }
+        .bagian5{ grid-area: box-5; background-color: rgb(163, 254, 84); }
+        .bagian6{ grid-area: box-6; background-color: rgba(46, 245, 66, 0.694); }
+        .bagian7{ grid-area: box-7; background-color: rgba(5, 219, 176, 0.961); }
+        .bagian8{ grid-area: box-8; background-color: rgb(79, 243, 67); }
+        .bagian9{ grid-area: box-9; background-color: rgba(200, 247, 170, 0.92); }
+
+       img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+        
+
+        h2{ margin: 0; }
+        p{ margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+<div class="grid_container">
+
+    <!-- Header -->
+    <div class="bagian1">
+        <h2>Michael Steve Mamengko</h2>
+        <p>Web Developer</p>
+        <p>Email: michael@email.com</p>
+    </div>
+
+    <!-- Foto -->
+   <div class="bagian3">
+    <h3>Profile</h3>
+    <img src="img/foto.jpg" alt="Foto Profil">
+</div>
+    <!-- About -->
+    <div class="bagian4">
+        <h3>About Me</h3>
+        <p>Saya seorang developer yang tertarik pada pengembangan aplikasi dan web.</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="bagian5">
+        <h3>Skills</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Java</p>
+    </div>
+
+    <!-- Education -->
+    <div class="bagian6">
+        <h3>Education</h3>
+        <p>SMA / Informatika</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="bagian7">
+        <h3>Contact</h3>
+        <p>Phone: 08xxxxxxxxxx</p>
+        <p>Instagram: @username</p>
+    </div>
+
+    <!-- Experience -->
+    <div class="bagian8">
+        <h3>Experience</h3>
+        <p>- Membuat aplikasi Android</p>
+        <p>- Website sederhana</p>
+    </div>
+
+</div>
+
+</body>
+</html>
